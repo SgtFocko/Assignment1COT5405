@@ -1,10 +1,13 @@
 # Assignment1COT5405
 COT5405 Programming Assignment 1
 
-The entire program is called: Assignment 1.c
-To run, just compile and run it in an IDE for C programming
+In this repository
+The entire program is called: "Assignment 1.c"
+To run, Download it, then just compile and run it in an IDE for C programming
 It also runs in the command window
 For example: This was done in Dev C++. Upon opening it ran the program as follows
+Alternatively You can just simply run the "Assignment 1.exe" file to run the program
+Also the pseudocode for the program is listed here as well as, "pseudo hw1.txt"
 
 The way the program works is that it will prompt the user for an input N between 1 and 1000
 N is the N-digit size number that will be computated in addition.
