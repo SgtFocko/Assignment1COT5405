@@ -1,0 +1,69 @@
+MAIN
+	get input N from user
+	2002-size array rand1 rand2
+	start timer
+	loop 1000 times
+		loop through array1 array2
+			make random array
+		randomize signs rand1, rand2
+		do add(rand1, rand2, n)
+	end timer
+	display timer
+END
+
+add(r1 r2 n)
+   if same sign do
+	result array of 2002
+	carry = 0
+	loop i => 0 up to n
+		temp = r1[i] +r2[i] +carry
+		carry = temp/10
+		result[i] = temp%10
+	if carry != 0
+		result[i] = carry;
+		i++
+	sign result = sign rand1
+	PRINT RESULTS r1, r2 , result
+   else if not same sign do
+	AddSub(r1 r2, n)
+ 
+Addsub(r1, r2 n)
+	array copy og1 = r1
+	array copy og2 = r2
+	array result[2002]
+	compare aboslute value of strings
+	if r1 = r2 
+		result = 0
+	if r1 > r2
+		loop j => 0 to n
+			if r1[j] >= r2[j]
+				result[j] = r1[j] - r2[j]
+			else
+				temp =r1[j]+10
+				k = j+1
+				while r1[k]=0
+					r1[k]=9
+					k++
+				r1[k] = r1[k]-1
+				result[j] = temp - r2[j]
+		before loop ends keep sign of r1 for result
+	else //when r1< r2
+		same thing as before with r1>r2 except
+		now all the r1 and r2 array mentions 
+		are switched places
+
+	PRINT RESULTS og1 og2 and results
+	//og1 and og2 are the arrays before being altered
+
+
+
+
+
+
+
+
+
+
+
+
+
